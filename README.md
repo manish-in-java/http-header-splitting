@@ -14,14 +14,14 @@ It utilises Maven profiles to launch different container versions.  The followin
 
 After running any of these commands, load the application home page in a web browser as
 [http://localhost:8080](http://localhost:8080).  This application also has the following profiles that are not
-working right:
+working right now:
 
 * Jetty 6: `mvn clean jetty:run -Pjetty6`
 * Resin 3: `mvn clean resin:run -Presin3`
 * Resin 4: `mvn clean resin:run -Presin4`
 
 Weblogic was not tested because it uses Tomcat internally to serve web requests and Tomcat is already being
-tested.  Websphere and Glassfish are not tested due to lack of time.
+tested.  Websphere and Glassfish were not tested due to lack of time.
 
 # Findings
 None of the tested containers, that is, Jetty 7-9 and Tomcat 6/7 exhibited vulnerability to the HTTP Header
